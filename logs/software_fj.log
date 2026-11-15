@@ -1,0 +1,104 @@
+2026-11-14 17:06:36,710 | INFO | Inicia operación: registrar cliente válido.
+2026-11-14 17:06:36,711 | INFO | Cliente registrado: Ana Pérez (f9d875b8-fd01-4a5a-add4-14ec0df19d52).
+2026-11-14 17:06:36,711 | INFO | Finaliza operación: registrar cliente válido.
+2026-11-14 17:06:36,711 | INFO | Inicia operación: rechazar cliente inválido.
+2026-11-14 17:06:36,711 | ERROR | ValidacionError: El nombre debe contener al menos 2 caracteres.
+2026-11-14 17:06:36,711 | INFO | Finaliza operación: rechazar cliente inválido.
+2026-11-14 17:06:36,711 | INFO | Inicia operación: rechazar correo duplicado.
+2026-11-14 17:06:36,712 | ERROR | ValidacionError: Ya existe un cliente con correo ana@example.com.
+2026-11-14 17:06:36,712 | INFO | Finaliza operación: rechazar correo duplicado.
+2026-11-14 17:06:36,712 | INFO | Inicia operación: registrar sala de reuniones.
+2026-11-14 17:06:36,712 | INFO | Servicio registrado: Sala Norte (5c159518-24f8-46f8-9311-fd34279b6361).
+2026-11-14 17:06:36,712 | INFO | Finaliza operación: registrar sala de reuniones.
+2026-11-14 17:06:36,712 | INFO | Inicia operación: registrar alquiler de equipos.
+2026-11-14 17:06:36,712 | INFO | Servicio registrado: Proyector (aa51d116-f546-4e39-bf6f-e9eb2e9e680d).
+2026-11-14 17:06:36,712 | INFO | Finaliza operación: registrar alquiler de equipos.
+2026-11-14 17:06:36,712 | INFO | Inicia operación: registrar asesoría especializada.
+2026-11-14 17:06:36,712 | INFO | Servicio registrado: Consultoría (b1fce729-10d5-4ca3-88dc-5ba1c96cd1df).
+2026-11-14 17:06:36,712 | INFO | Finaliza operación: registrar asesoría especializada.
+2026-11-14 17:06:36,712 | INFO | Inicia operación: rechazar servicio con capacidad inválida.
+2026-11-14 17:06:36,712 | ERROR | ValidacionError: La capacidad máxima debe ser un entero positivo.
+2026-11-14 17:06:36,712 | INFO | Finaliza operación: rechazar servicio con capacidad inválida.
+2026-11-14 17:06:36,712 | INFO | Inicia operación: crear reserva de sala.
+2026-11-14 17:06:36,712 | INFO | Reserva creada: ed29a99c-472f-4de6-810e-affedb799253.
+2026-11-14 17:06:36,712 | INFO | Finaliza operación: crear reserva de sala.
+2026-11-14 17:06:36,712 | INFO | Inicia operación: confirmar reserva de sala.
+2026-11-14 17:06:36,712 | INFO | Reserva ed29a99c-472f-4de6-810e-affedb799253 confirmada.
+2026-11-14 17:06:36,712 | INFO | Validación de confirmación finalizada para ed29a99c-472f-4de6-810e-affedb799253.
+2026-11-14 17:06:36,712 | INFO | Finaliza operación: confirmar reserva de sala.
+2026-11-14 17:06:36,712 | INFO | Inicia operación: procesar reserva con impuesto y descuento.
+2026-11-14 17:06:36,712 | INFO | Reserva ed29a99c-472f-4de6-810e-affedb799253 procesada por 104.50.
+2026-11-14 17:06:36,712 | INFO | Procesamiento finalizado para la reserva ed29a99c-472f-4de6-810e-affedb799253.
+2026-11-14 17:06:36,712 | INFO | Finaliza operación: procesar reserva con impuesto y descuento.
+2026-11-14 17:06:36,712 | INFO | Inicia operación: crear reserva sin parámetros requeridos.
+2026-11-14 17:06:36,712 | INFO | Reserva creada: cbe3768c-cead-48b5-85d1-6340cceaca42.
+2026-11-14 17:06:36,712 | INFO | Finaliza operación: crear reserva sin parámetros requeridos.
+2026-11-14 17:06:36,712 | INFO | Inicia operación: detectar parámetros faltantes al confirmar.
+2026-11-14 17:06:36,712 | ERROR | ParametroFaltanteError: Debe indicar la cantidad de personas.
+2026-11-14 17:06:36,712 | ERROR | ReservaError: La reserva no pudo ser confirmada.
+2026-11-14 17:06:36,712 | INFO | Validación de confirmación finalizada para cbe3768c-cead-48b5-85d1-6340cceaca42.
+2026-11-14 17:06:36,713 | INFO | Finaliza operación: detectar parámetros faltantes al confirmar.
+2026-11-14 17:06:36,713 | INFO | Inicia operación: crear reserva de equipo válida.
+2026-11-14 17:06:36,713 | INFO | Reserva creada: 9204ac89-296d-4257-b70c-eb9f0edad406.
+2026-11-14 17:06:36,713 | INFO | Finaliza operación: crear reserva de equipo válida.
+2026-11-14 17:06:36,713 | INFO | Inicia operación: confirmar y cancelar reserva de equipo.
+2026-11-14 17:06:36,713 | INFO | Reserva 9204ac89-296d-4257-b70c-eb9f0edad406 confirmada.
+2026-11-14 17:06:36,713 | INFO | Validación de confirmación finalizada para 9204ac89-296d-4257-b70c-eb9f0edad406.
+2026-11-14 17:06:36,713 | INFO | Reserva 9204ac89-296d-4257-b70c-eb9f0edad406 cancelada.
+2026-11-14 17:06:36,713 | INFO | Finaliza operación: confirmar y cancelar reserva de equipo.
+2026-11-14 17:06:36,713 | INFO | Inicia operación: rechazar cancelación después del procesamiento.
+2026-11-14 17:06:36,713 | ERROR | OperacionNoPermitidaError: No se puede cancelar una reserva en estado 'procesada'.
+2026-11-14 17:06:36,713 | INFO | Finaliza operación: rechazar cancelación después del procesamiento.
+2026-11-14 17:06:36,713 | INFO | Demostración finalizada: 10 operaciones exitosas; estado reserva principal: procesada.
+2026-11-14 19:37:39,206 | INFO | Inicia operación: registrar cliente válido.
+2026-11-14 19:37:39,206 | INFO | Cliente registrado: Ana Pérez (bb390327-a438-40de-9399-5af7c4196a03).
+2026-11-14 19:37:39,207 | INFO | Finaliza operación: registrar cliente válido.
+2026-11-14 19:37:39,207 | INFO | Inicia operación: rechazar cliente inválido.
+2026-11-14 19:37:39,207 | ERROR | ValidacionError: El nombre debe contener al menos 2 caracteres.
+2026-11-14 19:37:39,207 | INFO | Finaliza operación: rechazar cliente inválido.
+2026-11-14 19:37:39,207 | INFO | Inicia operación: rechazar correo duplicado.
+2026-11-14 19:37:39,207 | ERROR | ValidacionError: Ya existe un cliente con correo ana@example.com.
+2026-11-14 19:37:39,207 | INFO | Finaliza operación: rechazar correo duplicado.
+2026-11-14 19:37:39,207 | INFO | Inicia operación: registrar sala de reuniones.
+2026-11-14 19:37:39,207 | INFO | Servicio registrado: Sala Norte (61766297-5e22-4b11-87af-a7ef26b70cfb).
+2026-11-14 19:37:39,207 | INFO | Finaliza operación: registrar sala de reuniones.
+2026-11-14 19:37:39,207 | INFO | Inicia operación: registrar alquiler de equipos.
+2026-11-14 19:37:39,207 | INFO | Servicio registrado: Proyector (8eb4f94a-8a88-463b-88ce-ff0d6c80781f).
+2026-11-14 19:37:39,207 | INFO | Finaliza operación: registrar alquiler de equipos.
+2026-11-14 19:37:39,207 | INFO | Inicia operación: registrar asesoría especializada.
+2026-11-14 19:37:39,207 | INFO | Servicio registrado: Consultoría (6aaac73c-0c0f-4aca-89d3-81d059866129).
+2026-11-14 19:37:39,207 | INFO | Finaliza operación: registrar asesoría especializada.
+2026-11-14 19:37:39,207 | INFO | Inicia operación: rechazar servicio con capacidad inválida.
+2026-11-14 19:37:39,207 | ERROR | ValidacionError: La capacidad máxima debe ser un entero positivo.
+2026-11-14 19:37:39,207 | INFO | Finaliza operación: rechazar servicio con capacidad inválida.
+2026-11-14 19:37:39,207 | INFO | Inicia operación: crear reserva de sala.
+2026-11-14 19:37:39,207 | INFO | Reserva creada: 1f53f54e-b2cd-4096-9cc1-8643e89d12b5.
+2026-11-14 19:37:39,207 | INFO | Finaliza operación: crear reserva de sala.
+2026-11-14 19:37:39,207 | INFO | Inicia operación: confirmar reserva de sala.
+2026-11-14 19:37:39,207 | INFO | Reserva 1f53f54e-b2cd-4096-9cc1-8643e89d12b5 confirmada.
+2026-11-14 19:37:39,207 | INFO | Validación de confirmación finalizada para 1f53f54e-b2cd-4096-9cc1-8643e89d12b5.
+2026-11-14 19:37:39,207 | INFO | Finaliza operación: confirmar reserva de sala.
+2026-11-14 19:37:39,207 | INFO | Inicia operación: procesar reserva con impuesto y descuento.
+2026-11-14 19:37:39,207 | INFO | Reserva 1f53f54e-b2cd-4096-9cc1-8643e89d12b5 procesada por 104.50.
+2026-11-14 19:37:39,207 | INFO | Procesamiento finalizado para la reserva 1f53f54e-b2cd-4096-9cc1-8643e89d12b5.
+2026-11-14 19:37:39,207 | INFO | Finaliza operación: procesar reserva con impuesto y descuento.
+2026-11-14 19:37:39,207 | INFO | Inicia operación: crear reserva sin parámetros requeridos.
+2026-11-14 19:37:39,207 | INFO | Reserva creada: 451ccd8f-c84e-48e3-8f13-9f063d203242.
+2026-11-14 19:37:39,207 | INFO | Finaliza operación: crear reserva sin parámetros requeridos.
+2026-11-14 19:37:39,207 | INFO | Inicia operación: detectar parámetros faltantes al confirmar.
+2026-11-14 19:37:39,207 | ERROR | ParametroFaltanteError: Debe indicar la cantidad de personas.
+2026-11-14 19:37:39,208 | ERROR | ReservaError: La reserva no pudo ser confirmada.
+2026-11-14 19:37:39,208 | INFO | Validación de confirmación finalizada para 451ccd8f-c84e-48e3-8f13-9f063d203242.
+2026-11-14 19:37:39,208 | INFO | Finaliza operación: detectar parámetros faltantes al confirmar.
+2026-11-14 19:37:39,208 | INFO | Inicia operación: crear reserva de equipo válida.
+2026-11-14 19:37:39,208 | INFO | Reserva creada: 938abf6e-76f5-4292-8d4e-5e3d26738c4b.
+2026-11-14 19:37:39,208 | INFO | Finaliza operación: crear reserva de equipo válida.
+2026-11-14 19:37:39,208 | INFO | Inicia operación: confirmar y cancelar reserva de equipo.
+2026-11-14 19:37:39,208 | INFO | Reserva 938abf6e-76f5-4292-8d4e-5e3d26738c4b confirmada.
+2026-11-14 19:37:39,208 | INFO | Validación de confirmación finalizada para 938abf6e-76f5-4292-8d4e-5e3d26738c4b.
+2026-11-14 19:37:39,208 | INFO | Reserva 938abf6e-76f5-4292-8d4e-5e3d26738c4b cancelada.
+2026-11-14 19:37:39,208 | INFO | Finaliza operación: confirmar y cancelar reserva de equipo.
+2026-11-14 19:37:39,208 | INFO | Inicia operación: rechazar cancelación después del procesamiento.
+2026-11-14 19:37:39,208 | ERROR | OperacionNoPermitidaError: No se puede cancelar una reserva en estado 'procesada'.
+2026-11-14 19:37:39,208 | INFO | Finaliza operación: rechazar cancelación después del procesamiento.
+2026-11-14 19:37:39,208 | INFO | Demostración finalizada: 10 operaciones exitosas; estado reserva principal: procesada.
